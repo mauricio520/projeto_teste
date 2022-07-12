@@ -1,0 +1,155 @@
+nav {
+  box-shadow: 0 1px 5px 0 rgb(0 0 0 / 70%) !important;
+  outline: none !important;
+}
+
+.empresa {
+  height: 55px;
+}
+
+.img-user {
+  padding-top: 2rem;
+  margin-left: 58px;
+}
+
+.fixed-top {
+  left: 199px;
+  background-color: #088376;
+}
+
+.logo {
+  height: 70px;
+  color: rgb(10, 10, 10);
+  background-color: white;
+  text-align: center;
+  padding-top: 20px;
+  margin-left: -156px !important;
+
+}
+
+.menu-sidenav {
+  padding-top: 212px;
+}
+
+.info-user {
+  text-align: center;
+  color: white;
+}
+
+.sidenav {
+  height: 100%;
+  width: 199px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #088376;
+  overflow-x: hidden;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+}
+
+.sidenav a,
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: whitesmoke;
+  display: block;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none !important;
+  border-bottom: 1px solid #1c665f;
+}
+
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px;
+  font-size: 20px;
+  padding: 0px 10px;
+  padding-top: 10rem;
+  background-color: #80808000;
+  padding-bottom: 146px;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+
+table tbody tr:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 10px #000000;
+  -webkit-box-shadow: 0px 0px 10px #000000;
+  -moz-box-shadow: 0px 0px 10px #000000;
+}
+
+#accordion .card :hover {
+  border-left: 3px solid white
+}
+
+.card:hover {
+  border: none !important
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #14524c;
+  background-clip: border-box;
+  border: 1px solidrgba(0, 0, 0, .125);
+  border-radius: 0px;
+  outline: none !important;
+}
+
+body {
+  background-color: #e1e1e280;
+}
+
+.body-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border: 1px solidrgba(0, 0, 0, .125);
+  border-radius: 0px;
+  outline: none !important;
+
+}
+
+.card-header {
+  height: 50px;
+  text-align: center;
+  color: white;
+}
+
+.dropdown-menu {
+  margin: -91px;
+  margin-top: 12px !important;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 80%);
+}

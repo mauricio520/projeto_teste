@@ -1,0 +1,41 @@
+
+****************************************************************************************************
+
+INSERT INTO produtos(cod_prod,loj_prod,desc_prod,dt_inclu_prod,preco_prod)VALUES(170,2,'LEITE CONDESADO MOCOCA', '30/12/2010',45.40);
+
+UPDATE produtos SET preco_prod = 95.40 WHERE cod_prod = 170 AND loj_prod = 2;
+
+SELECT * FROM produtos WHERE loj_prod =  1 AND loj_prod = 2;
+
+SELECT min(dt_includ_prod) menor_data, max(dt_includ_prod) maior_data FROM produtos;
+
+SELECT count(*) FROM produtos;
+
+SELECT desc_prod FROM produtos WHERE desc_prod LIKE '%L%';
+
+SELECT SUM(preco_prod) FROM produtos;
+
+SELECT SUM(preco_prod) FROM produtos WHERE  loj_prod =  1 AND loj_prod = 2;
+
+SELECT 
+    (SELECT SUM(preco_prod) FROM produtos WHERE loj_prod = 1 AND preco_prod > 100.00 )as loja_1,
+    (SELECT SUM(preco_prod) FROM produtos WHERE loj_prod = 2 AND preco_prod > 100.00 )as loja_2 
+FROM produtos GROUP BY loja_1,loja_2;
+
+*****************************************************************************************************
+
+
+
+SELECT A.loj_prod, A.desc_loj,B.desc_prod,B.preco_prod,C.qtd_prod,C.cod_prod 
+FROM tabela_de_lojas A
+    LEFT JOIN tabela_de_produtos B ON A.loj_prod = B.loj_prod
+    LEFT JOIN tabela_de_estoque C ON A.loj_prod = C.loj_prod
+WHERE A.loj_prod = 1
+
+
+SELECT cod_prod, desc_prod FROM  tabela_de_produtos 
+WHERE cod_prod NOT IN (SELECT cod_prod FROM tabela_de_estoque);
+
+
+SELECT cod_prod FROM  tabela_de_estoque
+WHERE cod_prod NOT IN (SELECT cod_prod FROM tabela_de_produtos);
