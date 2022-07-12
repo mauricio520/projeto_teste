@@ -22,7 +22,7 @@
 <h2>REGRA DE NEGÓCIO:</h2>
 <hr>
 <br>
-<input type="text" name="input-filter" class=form-control id="input-filter" onkeyup="myFunction()"placeholder="Filter nome">
+<input type="text" name="input-filter" class=form-control id="input-filter" onkeyup="myFunction()"placeholder="Filter nome,cor,preco">
 <hr>
 <br>
     <table id="tablehome"style="width: 64rem;" data-filter-control="select" >
